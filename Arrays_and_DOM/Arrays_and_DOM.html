@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays and DOM</title>
+	</head>
+	<body>
+		<h1 id="fruitchain"></h1>
+		<script type="text/javascript">
+
+			//Declaring the array "fruits"
+			var fruits = ["apple", "orange", "kiwi"];
+
+			//Prompting for input and appending it to the array
+			fruits[3] = prompt("Add more fruit");
+
+			//Sorting the array alphabetically
+			fruits.sort();
+
+			//Stringing the elements together, separated by "with", and displaying the output in the h1 element
+			document.getElementById("fruitchain").innerHTML=fruits.join(" with ");
+		</script>
+
+	</body>
+</html>
