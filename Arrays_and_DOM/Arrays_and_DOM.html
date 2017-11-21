@@ -11,7 +11,8 @@
 			var fruits = ["apple", "orange", "kiwi"];
 
 			//Prompting for input and appending it to the array
-			fruits[3] = prompt("Add more fruit");
+			var input = prompt("Add more fruit");
+			fruits.push( input.toLowerCase() );
 
 			//Sorting the array alphabetically
 			fruits.sort();
