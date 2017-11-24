@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Using Data Types with DOM</title>
+	</head>
+	<body>
+		
+		<!-- Empty element to receive text from DOM -->
+		<h1 id="myName"></h1>
+		
+		<script type="text/javascript">
+
+			//Prompting for user's name
+			var input = prompt("Enter name");
+
+			//Inserting "Hello my name is" followed by user's name in the h1 element
+			document.getElementById("myName").innerHTML="Hello my name is " + input;
+		</script>
+
+	</body>
+</html>
