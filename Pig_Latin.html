@@ -10,10 +10,10 @@
 
 		<script type="text/javascript">
 			
-			//Prompting for user input
-			var input = prompt("Enter a word");
+			//Prompting for user input and making it lowercase
+			var input = prompt("Enter a word").toLowerCase();
 
-			//Converting user input to Pig Latin and displaying on the page
+			//Converting user input to Pig Latin and displaying through the h1 element
 			document.getElementById("pigLatin").innerHTML=input.slice(1)+input.charAt(0)+"ay";
 			
 		</script>
