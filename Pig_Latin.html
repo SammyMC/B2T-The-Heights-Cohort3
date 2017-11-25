@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pig Latin</title>
+	</head>
+	<body>
+
+		<!-- Empty element to be accessed via DOM -->
+		<h1 id="pigLatin"></h1>
+
+		<script type="text/javascript">
+			
+			//Prompting for user input
+			var input = prompt("Enter a word");
+
+			//Converting user input to Pig Latin and displaying on the page
+			document.getElementById("pigLatin").innerHTML=input.slice(1)+input.charAt(0)+"ay";
+			
+		</script>
+
+
+	</body>
+</html>
