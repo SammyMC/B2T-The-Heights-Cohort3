@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Get Day of the Week</title>
+	</head>
+	<body>
+
+		<!-- Empty h1 element to be accessed by DOM -->
+		<h1 id="welcome"></h1>
+
+		<script type="text/javascript">
+
+			//Declaring the variable day
+			var day
+
+			//Getting the current day of the week by its number, and matching it with its name
+			switch(new Date().getDay()){
+				case 0:
+					day = "Sunday";
+					break;
+				case 1:
+					day = "Monday";
+					break;
+				case 2:
+					day = "Tuesday";
+					break;
+				case 3:
+					day = "Wednesday";
+					break;
+				case 4:
+					day = "Thursday";
+					break;
+				case 5:
+					day = "Friday";
+					break;
+				default:
+					day = "Saturday";
+
+				//Displaying a message specific to the day in the h1 element
+				document.getElementById('welcome').innerHTML="Welcome to our " + day + " class!";
+			}
+		</script>
+
+	</body>
+</html>
