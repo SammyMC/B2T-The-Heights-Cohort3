@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Even/Odd Numbers</title>
+	</head>
+	<body>
+
+		<!-- Empty HTML element for use with DOM -->
+		<h1 id="nType"></h1>
+
+		<script type="text/javascript">
+			
+			//Initialization
+			var n = 0;
+
+			//Setting condition, checking it, and running code that outputs to the h1 element
+			while(n<=15){
+				if(n%2==0){
+					document.getElementById("nType").innerHTML += n + " is even <br>";
+				}else{
+					document.getElementById("nType").innerHTML += n + " is odd <br>";
+				}
+
+				//Incrementation
+				n++;
+			}
+			
+		</script>
+
+	</body>
+</html>

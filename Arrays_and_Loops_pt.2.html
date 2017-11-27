@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays and Loops pt.2</title>
+	</head>
+	<body>
+
+		<!-- Empty element accessed by DOM -->
+		<h1 id="sums"></h1>
+
+		<script type="text/javascript">
+
+			//An array and a loop that iterates through its elements and adds them together
+			var array = [5, 2, 10, 0, 50, 1900, 25, 25];
+			var sum = 0;
+			for(i in array){
+				sum += array[i]
+				
+				//Displaying the sum in the h1 element
+				document.getElementById("sums").innerHTML += 'The sum is ' + sum + "<br>";
+			}
+
+		</script>
+
+	</body>
+</html>

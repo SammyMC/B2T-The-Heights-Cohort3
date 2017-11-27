@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays and Loops</title>
+	</head>
+	<body>
+		
+		<!-- An empty element to be used with DOM -->
+		<h1 id="choices"></h1>
+
+		<script type="text/javascript">
+			
+			//An array of colors and an array of the endings of ordinal numbers
+			var color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+			var o = ["th", "st", "nd", "rd"];
+
+			//A loop that makes ordinal numbers, concatenates them with text and elements in the color array, and inserts the result into the h1 element
+			for(var i = 1; i <= color.length; i++){
+				if(i<4){
+					document.getElementById("choices").innerHTML += "The " + i + o[i] + " choice is " + color[i-1] + "<br>";
+				}else{
+					document.getElementById("choices").innerHTML += "The " + i + o[0] + " choice is " + color[i-1] + "<br>";
+				}
+			}
+
+		</script>
+
+	</body>
+</html>
