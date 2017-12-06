@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Library Objects</title>
+	</head>
+	<body>
+
+		<!-- A heading element for displaying the output of the loop below -->
+		<h1 id="readingList"></h1>
+
+		<script type="text/javascript">
+			
+			//An array that contains three objects
+			var library = [
+				{ author: 'Bill Gates', title: 'The Road Ahead', readingStatus: true },
+				{ author: 'Steve Jobs', title: 'Walter Isaacson', readingStatus: true },
+				{ author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of the Hunger Games', readingStatus: false }
+			]
+
+			//A loop that concatenates the objects's values with other text, and displays the results in the h1 heading 
+			for( var i = 0; 1 < library.length; i++){
+				if (library[i].readingStatus == true){
+					document.getElementById('readingList').innerHTML += 'Already read \'' + library[i].title + '\' by ' + library[i].author + '<br>';
+				}else{document.getElementById('readingList').innerHTML += 'You still need to read \'' + library[i].title + '\' by ' + library[i].author + '<br>';
+				}
+			}
+
+		</script>
+
+	</body>
+</html>

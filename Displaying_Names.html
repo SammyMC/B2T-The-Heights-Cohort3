@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Displaying Names</title>
+	</head>
+	<body>
+
+		<!-- Empty heading element for use with DOM -->
+		<p id="display"></p>
+		
+		<!-- Input boxes and a function call when the inputs are submitted -->
+		<form>
+			First name: <input type="text" id="fname" value="Curtis"><br>
+			Last name: <input type="text" id="lname" value="Jackson"><br>
+			<input type="button" value="Submit" onclick="getFormvalue()">
+		</form>
+
+		<script type="text/javascript">
+
+			//Displaying a greeting plus the inputs, in the heading element
+			function getFormvalue(){
+				var firstn = document.getElementById('fname').value;
+				var lastn = document.getElementById('lname').value;
+				document.getElementById('display').innerHTML = 'Hello ' + firstn + ' ' + lastn;
+			}
+
+		</script>
+
+	</body>
+</html>

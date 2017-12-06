@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Appending to Tables</title>
+	</head>
+	<body>
+		
+		<!-- A table with one row and two columns, initially -->
+		<table id="myTable" border="1">
+			<tr>
+				<td>Clifford</td>
+				<td>Harris</td>
+			</tr>
+		</table>
+
+		<!-- A form with new data to be added to the table -->
+		<form>
+			<input type="text" id="col1" value="Curtis"><br>
+			<input type="text" id="col2" value="Jackson"><br>
+			<input type="button" onclick="insertRow()" value="Insert row"><br>
+		</form>
+
+		<script type="text/javascript">
+			
+			function insertRow(){
+				
+				//Creating variables to be used in this function
+
+				var myTable = document.getElementById('myTable');
+				var newRow = document.createElement('tr');
+				var newCol1 = document.createElement('td');
+				var newCol2 = document.createElement('td');
+				
+				//Appending a new row with two columns to the table
+				myTable.appendChild(newRow);
+				newRow.appendChild(newCol1);
+				newRow.appendChild(newCol2);
+
+				//Entering values from the form into the new table columns
+				newCol1.innerHTML = document.getElementById('col1').value;
+				newCol2.innerHTML = document.getElementById('col2').value;
+			}
+
+		</script>
+
+	</body>
+</html>
